@@ -1,8 +1,8 @@
 
-import {view} from "../dependencies/preact-easy-state.mjs"
-import {Component, html} from "../dependencies/htm-preact.mjs"
+import {html} from "../dependencies/htm-preact.mjs"
+import {ViewComponent} from "../tools/view-component.mjs"
 
-export const Clock = view(class extends Component {
+export const Clock = class extends ViewComponent {
 	render() {
 		const {timer} = this.props
 		return html`
@@ -12,4 +12,4 @@ export const Clock = view(class extends Component {
 			</p>
 		`
 	}
-})
+}

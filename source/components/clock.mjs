@@ -2,7 +2,7 @@
 import {html} from "../dependencies/htm-preact.mjs"
 import {ViewComponent} from "../tools/view-component.mjs"
 
-export const Clock = class extends ViewComponent {
+export class Clock extends ViewComponent {
 	render() {
 		const {timer} = this.props
 		return html`

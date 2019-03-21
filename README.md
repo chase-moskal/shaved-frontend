@@ -1,16 +1,17 @@
 
 # chase-moskal's shaved-frontend
-## build-free minimalist web frontend forkable baseline
+## buildless minimalist web frontend forkable baseline
 
 - [**unpkg.com cdn**](https://unpkg.com) *loads dependencies*
 - [**preact**](https://preactjs.com/) *renders components*
 - [**htm**](https://github.com/developit/htm) *transforms jsx*
-- [**easy-state**](https://github.com/solkimicreb/react-easy-state) *observes state*
+- [**mobx**](https://github.com/mobxjs/mobx) *observes state*
 
 ## no build, no bundling, no transpilation
 
 - go all-native with es modules — oh so lean, oh so clean — very neat
-- external dependencies are loaded from the unpkg cdn (see [source/dependencies](source/dependencies/))
+- using es-module-shims for import map functionality
+- external dependencies are loaded from the unpkg cdn
 - despite having no build step, we can still enjoy jsx syntax for our components via the [htm](https://github.com/developit/htm) transformer
 - using `mjs` extension retains possibility for isomorphic code sharing with node
 

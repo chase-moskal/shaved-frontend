@@ -1,5 +1,5 @@
 
-import {Component} from "htm-preact"
-import {view} from "preact-easy-state"
+import {Component} from "preact"
+import {observer} from "mobx-preact"
 
-export const ViewComponent = view(Component)
+export const ViewComponent = observer(Component)

@@ -1,5 +1,7 @@
 
-import {render, html} from "htm-preact"
+import {render} from "preact"
+
+import {html} from "./tools/html.mjs"
 
 import {Clock} from "./components/clock.mjs"
 import {createTimerController} from "./controllers/create-timer-controller.mjs"

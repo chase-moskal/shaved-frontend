@@ -1,10 +1,9 @@
 
-import {store} from "preact-easy-state"
+import {observable, action} from "mobx"
 
 export function createTimerController() {
-	const timer = store({timestamp: Date.now()})
-
-	const update = () => timer.timestamp = Date.now()
+	const timer = observable({timestamp: Date.now()})
+	const update = action(() => timer.timestamp = Date.now())
 	let interval = null
 
 	const stop = () => {

@@ -1,5 +1,6 @@
 
-import {html} from "../dependencies/htm-preact.mjs"
+import {html} from "htm-preact"
+
 import {ViewComponent} from "../tools/view-component.mjs"
 
 export class Clock extends ViewComponent {

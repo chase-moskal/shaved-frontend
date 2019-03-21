@@ -5,7 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>shaved-frontend</title>
 		<link rel="stylesheet" href="source/style.css"/>
-		<script async defer type="module" src="source/main.mjs"></script>
+		<script defer src="//unpkg.com/es-module-shims@0.2.1/dist/es-module-shims.js"></script>
+		<script type="importmap-shim">
+			{
+				"imports": {
+					"preact": "//unpkg.com/preact@8.4.2/dist/preact.mjs",
+					"lit-html": "//unpkg.com/lit-html@1.0.0/lit-html.js",
+					"htm": "//unpkg.com/htm@2.1.1/dist/htm.mjs",
+					"htm-preact": "//unpkg.com/htm@2.1.1/preact/standalone.mjs",
+					"mobx": "https://unpkg.com/mobx@5.9.0/lib/mobx.es6.js",
+					"preact-easy-state": "//unpkg.com/preact-easy-state@5.1.0/dist/es.es6.js?module"
+				}
+			}
+		</script>
+		<script type="module-shim">
+			import {main} from "./source/main.mjs"
+			main()
+		</script>
 	</head>
 	<body>
 		<h1><a href="https://github.com/chase-moskal/shaved-frontend">chase-moskal's shaved-frontend on github</a></h1>

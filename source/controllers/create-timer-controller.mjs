@@ -1,5 +1,5 @@
 
-import {store} from "../dependencies/preact-easy-state.mjs"
+import {store} from "preact-easy-state"
 
 export function createTimerController() {
 	const timer = store({timestamp: Date.now()})

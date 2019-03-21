@@ -1,5 +1,5 @@
 
-import {Component} from "../dependencies/htm-preact.mjs"
-import {view} from "../dependencies/preact-easy-state.mjs"
+import {Component} from "htm-preact"
+import {view} from "preact-easy-state"
 
 export const ViewComponent = view(Component)

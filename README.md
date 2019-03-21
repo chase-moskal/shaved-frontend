@@ -2,7 +2,8 @@
 # chase-moskal's shaved-frontend
 ## buildless minimalist web frontend forkable baseline
 
-- [**unpkg.com cdn**](https://unpkg.com) *loads dependencies*
+- [**es-module-shims**](https://github.com/guybedford/es-module-shims) *brings import maps support*
+- [**unpkg.com cdn**](https://unpkg.com) *hosts dependencies*
 - [**preact**](https://preactjs.com/) *renders components*
 - [**htm**](https://github.com/developit/htm) *transforms jsx*
 - [**mobx**](https://github.com/mobxjs/mobx) *observes state*
@@ -10,9 +11,9 @@
 ## no build, no bundling, no transpilation
 
 - go all-native with es modules — oh so lean, oh so clean — very neat
-- using es-module-shims for import map functionality
 - external dependencies are loaded from the unpkg cdn
-- despite having no build step, we can still enjoy jsx syntax for our components via the [htm](https://github.com/developit/htm) transformer
+- es-module-shims provides supports for import maps, which are necessary for rewriting bare specifiers (external dependencies)
+- despite having no build step, we can still enjoy jsx syntax for our components via the [htm](https://github.com/developit/htm) transformer *(so awesome!)*
 - using `mjs` extension retains possibility for isomorphic code sharing with node
 
 ## how to do

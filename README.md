@@ -25,3 +25,9 @@
 	- start it in the project directory: `npm run http-server`
 	- browse to http://localhost:8080
 4. code, reload, repeat, profit
+
+## why is there a package.json?
+
+it's for dev-time dependencies.. literally just `http-server` and `importly`
+
+in the future, when [web modules](https://github.com/nodejs/modules/issues/278) land in node... we won't need one anymore 😎

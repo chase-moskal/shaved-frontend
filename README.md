@@ -22,6 +22,6 @@
 1. clone this project `git clone <GITURL>`
 2. run `npm install` in the project
 3. start the http server
-	- start it in the project directory: `http-server`
+	- start it in the project directory: `npm run http-server`
 	- browse to http://localhost:8080
 4. code, reload, repeat, profit

@@ -5,9 +5,8 @@
 - [**es-module-shims**](https://github.com/guybedford/es-module-shims) *brings import maps support*
 - [**importly**](https://github.com/chase-moskal/importly) *manages packages*
 - [**unpkg.com cdn**](https://unpkg.com) *hosts dependencies*
-- [**preact**](https://preactjs.com/) *renders components*
-- [**htm**](https://github.com/developit/htm) *transforms jsx*
-- [**mobx**](https://github.com/mobxjs/mobx) *observes state*
+- [**lit-element**](https://github.com/Polymer/lit-element) *web component baseclass*
+- [**lit-html**](https://github.com/polymer/lit-html) *renders jsx-style templates*
 
 ## no build, no bundling, no transpilation
 

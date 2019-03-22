@@ -35,7 +35,3 @@ body {
 body > * + * {
 	margin-top: 1em;
 }
-
-.clock {
-	font-family: monospace;
-}

@@ -1,0 +1,13 @@
+
+{
+	"imports": {
+		"htm/": "https://unpkg.com/htm@2.1.1/",
+		"htm": "https://unpkg.com/htm@2.1.1/dist/htm.mjs",
+		"mobx/": "https://unpkg.com/mobx@5.9.0/",
+		"mobx": "https://unpkg.com/mobx@5.9.0/lib/mobx.module.js",
+		"preact/": "https://unpkg.com/preact@8.4.2/",
+		"preact": "https://unpkg.com/preact@8.4.2/dist/preact.mjs",
+		"mobx-preact/": "https://unpkg.com/mobx-preact@3.0.0/",
+		"mobx-preact": "https://unpkg.com/mobx-preact@3.0.0/lib/index.module.js"
+	}
+}

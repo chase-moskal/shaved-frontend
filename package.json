@@ -1,0 +1,28 @@
+{
+	"private": true,
+	"name": "shaved-frontend",
+	"version": "0.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "npm run build -s",
+		"build": "importly generate > importmap.json",
+		"start": "http-server",
+		"test": "exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chase-moskal/shaved-frontend.git"
+	},
+	"keywords": [],
+	"author": "Chase Moskal <chasemoskal@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/chase-moskal/shaved-frontend/issues"
+	},
+	"homepage": "https://github.com/chase-moskal/shaved-frontend#readme",
+	"devDependencies": {
+		"http-server": "^0.11.1",
+		"importly": "0.0.0-dev.1"
+	}
+}

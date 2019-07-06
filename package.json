@@ -1,12 +1,12 @@
 {
 	"private": true,
 	"name": "shaved-frontend",
-	"version": "0.0.0",
+	"version": "0.2.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"prepare": "npm run build -s",
-		"build": "importly < importly.config > importmap.json",
+		"prepare": "npm run importmap -s",
+		"importmap": "importly < importly.config > importmap.json",
 		"start": "serve",
 		"test": "exit 0"
 	},

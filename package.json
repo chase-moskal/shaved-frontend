@@ -3,26 +3,33 @@
 	"name": "shaved-frontend",
 	"version": "0.2.0",
 	"description": "",
+	"license": "ISC",
 	"main": "index.js",
 	"scripts": {
-		"prepare": "npm run importmap -s",
+		"prepare": "run-p importmap webmodules",
 		"importmap": "importly < importly.config > importmap.json",
+		"webmodules": "pika-web",
 		"start": "serve",
 		"test": "exit 0"
 	},
+	"dependencies": {
+		"lit-element": "^2.2.0",
+		"lit-html": "^1.1.0"
+	},
+	"devDependencies": {
+		"@pika/web": "^0.4.3",
+		"importly": "0.0.0",
+		"npm-run-all": "^4.1.5",
+		"serve": "^11.0.2"
+	},
+	"author": "Chase Moskal <chasemoskal@gmail.com>",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/chase-moskal/shaved-frontend.git"
 	},
-	"keywords": [],
-	"author": "Chase Moskal <chasemoskal@gmail.com>",
-	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/chase-moskal/shaved-frontend/issues"
 	},
 	"homepage": "https://github.com/chase-moskal/shaved-frontend#readme",
-	"devDependencies": {
-		"importly": "0.0.0",
-		"serve": "^11.0.2"
-	}
+	"keywords": []
 }

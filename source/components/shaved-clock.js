@@ -1,5 +1,5 @@
 
-import {LitElement, html, css} from "lit-element"
+import {LitElement, html, css} from "/web_modules/lit-element.js"
 
 export class ShavedClock extends LitElement {
 

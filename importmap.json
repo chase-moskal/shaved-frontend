@@ -1,21 +1,9 @@
 
 {
 	"imports": {
-		"lit-html/": [
-			"https://unpkg.com/lit-html@1.1.0/",
-			"https://cdn.jsdelivr.net/npm/lit-html@1.1.0/"
-		],
-		"lit-html": [
-			"https://unpkg.com/lit-html@1.1.0/lit-html.js",
-			"https://cdn.jsdelivr.net/npm/lit-html@1.1.0/lit-html.js"
-		],
-		"lit-element/": [
-			"https://unpkg.com/lit-element@2.2.0/",
-			"https://cdn.jsdelivr.net/npm/lit-element@2.2.0/"
-		],
-		"lit-element": [
-			"https://unpkg.com/lit-element@2.2.0/lit-element.js",
-			"https://cdn.jsdelivr.net/npm/lit-element@2.2.0/lit-element.js"
-		]
+		"lit-html/": "https://unpkg.com/lit-html@1.1.0/",
+		"lit-html": "https://unpkg.com/lit-html@1.1.0/lit-html.js",
+		"lit-element/": "https://unpkg.com/lit-element@2.2.0/",
+		"lit-element": "https://unpkg.com/lit-element@2.2.0/lit-element.js"
 	}
 }

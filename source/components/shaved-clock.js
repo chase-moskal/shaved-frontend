@@ -1,11 +1,20 @@
 
-import {Component, html} from "../tools/component.mjs"
+import {LitElement, html, css} from "lit-element"
 
-export class Clock extends Component {
+export class ShavedClock extends LitElement {
+
 	static get properties() {
 		return {
-			timestamp: {type: Number}
+			timestamp: {type: Number, reflect: true}
 		}
+	}
+
+	static get styles() {
+		return css`
+			:host {
+				color: yellow;
+			}
+		`
 	}
 
 	constructor() {
@@ -32,9 +41,6 @@ export class Clock extends Component {
 	render() {
 		const {timestamp} = this
 		return html`
-			<style>
-				:host { color: yellow; }
-			</style>
 			<p class="clock">
 				<strong>${timestamp}</strong>
 				<em> ← <slot></slot></em>
@@ -42,5 +48,3 @@ export class Clock extends Component {
 		`
 	}
 }
-
-customElements.define("sh-clock", Clock)
